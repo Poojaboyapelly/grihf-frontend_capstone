@@ -7,10 +7,14 @@ import Login from "./Components/Login/Login";
 import SignUp from "./Components/Sign_Up/Sign_Up";
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Healthblog from './Components/Home/Home';
-import DoctorCard from './Components/DoctorCard/DoctorCard';
+import Healthblog from './Components/Healthblog/Healthblog';
 import BookingConsultation from './Components/BookingConsultation';
-
+import SelfCheckup from './Components/SelfCheckup/SelfCheckup';
+import ReviewForm from './Components/ReviewForm/ReviewForm';
+import ReportsLayout from './Components/ReportsLayout/ReportsLayout';
+import ProfileCard from './Components/ProfileCard/ProfileCard';
+import Home from './Components/Home/Home';
+import Notification from './Components/Notification/Notification';
 
 function App() {
   return (
@@ -22,10 +26,16 @@ function App() {
               <Route path="/Login" element={<Login/>}/>
               <Route path="/SignUp" element={<SignUp/>}/>
               <Route path="/InstantConsultation" element={<InstantConsultation/>} />
-              <Route path='/Home' element ={<Healthblog/>}/>
+              <Route path='/Home' element ={<Home/>}/>
               <Route path='/BookingConsultation' element={<BookingConsultation/>}/>
+              <Route path="/SelfCheckup" element={<SelfCheckup/>} />
+              <Route path="/ReviewForm" element={<ReviewForm/>}/>
+              <Route path="/ProfileCard" element={<ProfileCard/>}/>
+              <Route path="/ReportsLayout" element={<ReportsLayout/>}/>
+              <Route path="/Healthblog" element={<Healthblog/>}/>
 
               </Routes>
+              <Notification/>
             
         </BrowserRouter>
   </div>
